@@ -7,6 +7,13 @@ import Register from './Screens/Register';
 
 export const AppNavigator = createStackNavigator(
   {
+    Main: {
+      screen: Main,
+      navigationOptions: ({navigation}) => ({
+        header: null,
+      }),
+      mode: 'none',
+    },
     Signin: {
       screen: Signin,
       navigationOptions: ({navigation}) => ({
